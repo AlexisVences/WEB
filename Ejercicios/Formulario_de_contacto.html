@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto</title>
+    <script src="Scripts/script61.js" defer></script>
+    <link rel="stylesheet" href="Styles/Styles.css"> 
+</head>
+<body class="bodyForm">
+    <button class="btn-regresar" onclick="location.href='index.html';">Regresar al Inicio</button>
+    <center><h1 style="color:rgb(244, 244, 244)">Formulario de Contacto</h1></center>
+    <form action="#" method="post">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" ><br><br>
+        
+        <label>Género:</label>
+        <input type="checkbox" id="genero-masculino" name="genero" value="Masculino">
+        <label for="genero-masculino">Masculino</label>
+        <input type="checkbox" id="genero-femenino" name="genero" value="Femenino">
+        <label for="genero-femenino">Femenino</label><br>
+        
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" ><br><br><br>
+        
+        <label for="entidad">Entidad Federativa:</label>
+        <select id="entidad" name="entidad" >
+            <option value="">Seleccione una entidad</option>
+            <option value="CDMX">Ciudad de México</option>
+            <option value="EdoMex">Estado de México</option>
+            <option value="Jalisco">Jalisco</option>
+            <option value="Morelos">Morelos</option>
+            <option value="NuevoLeon">Nuevo León</option>
+        </select><br><br><br>
+        
+        <th>Municipio: </th>
+
+        <input type="Municipio" list="items">
+            <datalist id="items">
+            <option value="Tlalnepantla">Tlalnepantla</option>
+            <option value="Tecamac">Tecaman</option>
+            <option value="Naucalpan">Naucalpan</option>
+            <option value="Atizapan">Atizapan</option>
+            <option value="Churubusco">Churubusco</option>
+            </datalist>
+            <br><br><br>
+        
+        <label>Pasatiempos:</label> 
+        <input type="checkbox" id="1" name="pasatiempos" value="a">
+        <label for="1">Lectura</label>
+        <input type="checkbox" id="2" name="pasatiempos" value="a">
+        <label for="2">Deporte</label>
+        <input type="checkbox" id="3" name="pasatiempos" value="a">
+        <label for="3">Música</label>
+        
+        <br><br><br>
+
+        <input type = "submit">
+        
+    </form>
+</body>
+</html>

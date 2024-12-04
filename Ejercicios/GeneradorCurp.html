@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Curp</title>
+    <script src="Scripts/script61.js" defer></script>
+    <link rel="stylesheet" href="Styles/Styles.css"> 
+</head>
+<body class = "bodyCurp">
+    <button class="btn-regresar" onclick="location.href='index.html';">Regresar al Inicio</button>
+
+    <div class="div-curp-titulo">
+        <h1><center>Generador de Curp</center></h1>
+
+        <div>
+            <label for="Nombre">Nombre:</label>
+            <input class="input-style" type="text" id="Nombre" placeholder="Ingresa tu nombre">
+            <br>
+    
+            <label for="aPaterno">Apellido Paterno:</label>
+            <input class="input-style" type="text" id="aPaterno" placeholder="Ingresa tu apellido paterno">
+            <br>
+    
+            <label for="aMaterno">Apellido Materno:</label>
+            <input class="input-style" type="text" id="aMaterno" placeholder="Ingresa tu apellido materno">
+            <br>
+    
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input class="input-style" type="date" id="fechaNacimiento">
+            <br>
+    
+            <label for="Sexo">Sexo (H/M):</label>
+            <input class="input-style" type="text" id="Sexo" placeholder="H para Hombre, M para Mujer">
+            <br>
+    
+            <label for="Entidad">Entidad de Nacimiento:</label>
+            <input class="input-style" type="text" id="Entidad" placeholder="Ingresa el estado de nacimiento">
+            <br>
+    
+            <button class="button-style" onclick="generarCurp()">Generar CURP</button>
+        </div>
+    
+        <p class="result-style" id="resultadoCurp"></p>
+    </div>
+
+    
+</body>
+</html>

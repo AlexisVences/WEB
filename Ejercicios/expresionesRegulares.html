@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Contraseña</title>
+    <link rel="stylesheet" href="Styles/Styles.css">
+    <script src="Scripts/script61.js" defer></script>
+</head>
+<body class="bodyExpresionesRegulares">
+    <button class="btn-regresar-ER" onclick="location.href='index.html';">Regresar al Inicio</button>
+    <div class="validarContrasena">
+        <h1>Verificador de Contraseñas</h1>
+        
+        <label for="inputCadena">Ingresa una contraseña con al menos 8 caracteres y un caracter especial</label>
+        <input type="password" id="inputCadena" placeholder="Ingresa la contraseña">
+        
+        <button onclick="verificarExpresion()">Validar</button>
+        <p class="result-style" id="resultadoExpresionRegular">(Un ejemplo de un caracter especial es @)</p>
+    </div>
+</body>
+</html>

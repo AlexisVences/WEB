@@ -1,0 +1,469 @@
+/* Estilos del body */
+
+.bodyIndex {
+    font-family: Arial, sans-serif;
+    background-image: url('../Imagenes/fondo.jpg'); /* Imagen de fondo general */
+    background-size: cover; /* Asegura que la imagen cubra toda la página */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0;
+    padding: 0;
+}
+
+.bodyEjercicios {
+    background-image: url('../Imagenes/ejercicios.jpg'); /* Imagen de fondo general */
+    background-size: cover; /* Asegura que la imagen cubra toda la página */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0;
+    padding: 0;
+}
+
+.bodyExpresionesRegulares {
+    background-image : url('../Imagenes/criptografia.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh;                   /* Altura del viewport para el body */
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+.bodyCurp {
+    background-image : url('../Imagenes/curp.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh;                   /* Altura del viewport para el body */
+    padding: 0;
+    background-repeat: no-repeat;
+}
+
+/* Estilos del header */
+.header-stylee {
+    background-color: rgba(0, 0, 0, 0.8); /* Opcional: Color de fondo semi-transparente */
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Estilos del header del Generador de Curp */
+.header-style {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    
+}
+
+/*Estilo para el boton de regreso al menú principal*/
+.btn-regresar {
+    position: fixed;
+    top: 10px;  /* Espacio desde la parte superior */
+    left: 10px;  /* Espacio desde la parte derecha */
+    background-color: #000000;  /* Color del botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000;  /* Asegura que el botón esté por encima de otros elementos */
+}
+
+.btn-regresar:hover {
+    background-color: #ffffff;  /* Cambia el color al pasar el ratón */
+    color: black;
+}
+
+
+/*Estilo del menu desplegable*/
+/**************************************************************/
+.ul{
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+/* Estilos generales para el menú */
+.menu {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu > li {
+    position: relative; /* Posicionamiento relativo para que el dropdown sea posicionado correctamente */
+    display: inline-block;
+}
+
+.nav-link-style {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* Submenú (dropdown) oculto por defecto */
+.dropdown {
+    display: none; /* Ocultamos el dropdown por defecto */
+    position: absolute;
+    top: 100%; /* Alinea el dropdown justo debajo del menú principal */
+    left: 0;
+    background-color: #444; /* Color de fondo del dropdown */
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    z-index: 1;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown a {
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    /*background-color: #444;*/
+
+}
+
+.dropdown a:hover {
+    background-color: #555; /* Cambia de color cuando el mouse pasa sobre los links */
+}
+
+/* Mostrar el submenú cuando el mouse pase sobre el menú principal */
+.menu li:hover .dropdown {
+    display: block; /* Muestra el dropdown cuando se hace hover */
+}
+
+/* Opcional: estilos para el menú principal */
+.menu > li > a:hover {
+    background-color: #555; /* Cambia el color del menú principal cuando se hace hover */
+}
+/******************************************************************************************************/
+
+/* Estilos del nav y los enlaces */
+.nav-style ul {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+}
+
+.nav-item-style {
+    display: inline;
+    margin: 0 10px; 
+    text-align:center;
+    color: rgb(255, 253, 253)
+}
+
+.nav-link-style {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2em;
+    justify-content: center;
+    margin:0;
+}
+
+/* Estilos de h1 y h2 */
+.heading1-style {
+    color: white;
+    text-align: center;
+    font-size: 3em
+
+}
+
+.heading2-indexstyle {
+    color: #b0c8d0;
+    font-size: 5em
+}
+
+.heading2-style {
+    color: #020202;
+}
+
+/* Contenido principal */
+.main-content-style {
+    padding: 20px;
+    background-color: rgba(123, 118, 118, 0.8); /* Opcional: Color de fondo semi-transparente */
+    width: 80%;
+    margin: 20px auto;
+    color:rgb(0, 0, 0);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de los botones */
+.button-style {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-style:hover {
+    background-color: #555;
+}
+
+/* Estilos de inputs y textareas */
+.input-style, .textarea-style {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos de los párrafos de resultado */
+.result-style {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Banner con imagen de fondo */
+.banner {
+    /*Fondo transparente*/
+    background-color: rgba(0, 0, 0, 0.8); /* Opcional: Color de fondo semi-transparente */
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* Altura del banner */
+    color: white; /* Para que el texto sea visible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Sección con imagen de fondo */
+.seccion-fondo {
+    background-image: url('/Imagenes/html.png'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 18px;
+    font-size: 0.8em;
+    color: white;
+
+}
+
+/*Css de fechas importantes del ipn*/
+.containerFechasImportantes {
+    display: inline;
+    width: 80%;
+    max-width: 900px;
+    margin-top: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+}
+
+.containerBody {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center; /* Centra el contenido horizontal y verticalmente */
+    background-color: #5c1232;
+    font-family: Arial, sans-serif;
+}
+
+/*Tabla liga de la justicia*/
+.h1LigaDeLaJusticia {
+    color: #ffdd00;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px #fff305;
+}
+
+.bodyLigaDeLaJusticia {
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px #000;
+    background-color: black;
+}
+
+table {
+    background-color: #44475a; /* Fondo de la tabla */
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+    box-shadow: 0 0 15px rgba(239, 219, 32, 0.3);
+    border: 2px solid #fbfbfb; /* Borde de la tabla */
+}
+
+/* Celdas normales */
+td {
+    background-color: #ffffff; /* Fondo de las celdas */
+    color: rgb(0, 0, 0); /* Texto en blanco */
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Encabezados */
+th {
+    background-color: #ff5555; /* Fondo de los encabezados */
+    color: white; /* Texto blanco */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+/*Estilo Jornada de induccion*/
+.bodyInduccion {
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px #fefefe;
+    background-color: rgb(77, 9, 37);
+}
+
+.footer-style {
+    background-color:#322029;
+    ;  
+    color: white;  
+    text-align: center; 
+    padding: 15px;  /* Espaciado interno */
+    font-size: 0.9em;  /* Tamaño de fuente más pequeño */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ESTILO DE TABLA DE MULTIPLICAR*/
+.table-container {
+    background-color: #e0f6fe; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 20px auto; /* Centra el contenedor */
+    width: 80%; /* Ancho del contenedor */
+}
+
+/* Estilos para la tabla */
+.tableHeader {
+    background-color: #020817;
+    color: white;
+    height: 400;
+    padding: 400;
+    text-align: center;   
+    font-size: 3em; 
+}
+
+table {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    border-collapse: collapse; /* Combina bordes de celdas adyacentes */
+}
+
+/* Estilo para las celdas y encabezados */
+th, td {
+    border: 1px solid black; /* Borde negro */
+    padding: 10px; /* Espaciado interno en celdas */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo para los encabezados */
+th {
+    background-color: #071538; /* Color de fondo para encabezados */
+    color: white
+}
+/*FIN DE ESTILO DE TABLA DE MULTIPLICAR*/
+
+.validarContrasena{
+    background-color: rgb(235, 235, 235);
+    color: black;
+    margin: 0 auto;
+    padding: 100px 20px 20px 20px;
+    width: 800px;
+    height: 300px;
+    border-radius: 15px;
+    margin-top: 100px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+}
+
+/*Estilo para el boton de regreso al menú principal*/
+.btn-regresar-ER {
+    position: fixed;
+    top: 10px;  /* Espacio desde la parte superior */
+    left: 10px;  /* Espacio desde la parte derecha */
+    background-color: #f2fafc;  /* Color del botón */
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    z-index: 1000;  /* Asegura que el botón esté por encima de otros elementos */
+}
+
+.btn-regresar-ER:hover {
+    background-color: #7ac6db;  /* Cambia el color al pasar el ratón */
+    color: black;
+}
+
+.div-curp-titulo{
+    width: 800px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px 20px 20px 20px;
+    width: 800px;
+    border-radius: 15px;
+    margin-top: 17px;
+}
+
+/* Estilos para el formulario de contacto */
+.bodyForm{
+    background-color: #510634;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 70%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo de los labels */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333; /* Color del texto */
+    font-size: 1.1rem;
+}
+
+
+/* Estilos para los checkboxes */
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Estilo para el botón de enviar */
+form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: block;
+    width: 100%;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para los botones de género y pasatiempos */
+form input[type="checkbox"] + label {
+    font-weight: normal;
+    color: #555;
+}
